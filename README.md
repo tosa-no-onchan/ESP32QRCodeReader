@@ -1,6 +1,8 @@
 # ESP-EYE QR Code Scanner with qrdec.
 
-This library provides a interface to read QR Codes using an ESP-EYE with a camera and qrdec.
+This library provides a interface to read QR Codes using an ESP-EYE with a camera and qrdec.  
+I would like to recomend qrdec a little bit than quirc.  
+See [qrdec](https://github.com/torque/qrdec).  
 
 Original 
 [alvarowolfx/ESP32QRCodeReader](https://github.com/alvarowolfx/ESP32QRCodeReader)  
