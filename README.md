@@ -6,14 +6,9 @@ Original
 [alvarowolfx/ESP32QRCodeReader](https://github.com/alvarowolfx/ESP32QRCodeReader)  
 Internally this lib uses a slight modified version of the [Quirc library](https://github.com/dlbeer/quirc) and [qrdec](https://github.com/torque/qrdec).
 
-## Demos
-
-- EN-US - See demo video at https://twitter.com/alvaroviebrantz/status/1290116219199279104?s=20
-- PT-BR - Veja video de demo em https://twitter.com/alvaroviebrantz/status/1290116405824806912?s=20
-
 ## Usage
 
-Is recommended to use PlatformIO to install this lib. Add `ESP32QRCodeReader` to your `platformio.ini` file.
+Is recommended to use PlatformIO to install this lib. Add `qrdec_esp32_eye` to your `platformio.ini` file.
 
 From PlatformIO library:
 
