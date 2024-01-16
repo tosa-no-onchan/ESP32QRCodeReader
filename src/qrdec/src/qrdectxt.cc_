@@ -10,10 +10,8 @@
 #include "qrcode.h"
 #include "util.h"
 
-
 // add by nishi
 #include <Arduino.h>
-
 #include "libiconv/src/include/iconv.h"
 
 static int text_is_ascii(const unsigned char *_text,int _len){

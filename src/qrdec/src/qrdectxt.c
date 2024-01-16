@@ -6,19 +6,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <iconv.h>
+//#include <iconv.h>
 #include "qrcode.h"
 #include "util.h"
 
-
-//# if defined(__cplusplus)
-//extern "C" {
-//#endif
-//  #include <Arduino.h>
-//  //extern void Serial.printf(char *);
-//# if defined(__cplusplus)
-//}
-//#endif
+// add by nishi
+#include "libiconv/src/include/iconv.h"
 
 static int text_is_ascii(const unsigned char *_text,int _len){
   int i;
@@ -89,24 +82,19 @@ int qr_code_data_list_extract_text(const qr_code_data_list *_qrlist,
   qrdata = _qrlist->qrdata;
   nqrdata = _qrlist->nqrdata;
 
-  // nqrdata=1
-  //printf(">nqrdata: %d\n", nqrdata);
-
-  // sizeof(*text)=8
-  //printf("sizeof(*text) %d:\n", (int)sizeof(*text));
   text = (char **)malloc(nqrdata * sizeof(*text));
   for(i=0;i < nqrdata;i++)
       text[i]= NULL;
 
-  // sizeof(*mark)=1
-  //printf("sizeof(*mark) %d:\n", (int)sizeof(*mark));
   mark = (unsigned char *)calloc(nqrdata, sizeof(*mark));
   ntext = 0;
 
   /*This is the encoding the standard says is the default.*/
-  latin1_cd = iconv_open("UTF-8","ISO8859-1");
+  //latin1_cd = iconv_open("UTF-8","ISO8859-1");
+  latin1_cd = iconv_open("UTF-8","LATIN1");
   /*But this one is often used, as well.*/
-  sjis_cd = iconv_open("UTF-8","SJIS");
+  //sjis_cd = iconv_open("UTF-8","SJIS");
+  sjis_cd = iconv_open("UTF-8","JIS-0201");
   /*This is a trivial conversion just to check validity without extra code.*/
   utf8_cd = iconv_open("UTF-8","UTF-8");
   for(i = 0; i < nqrdata; i++){
