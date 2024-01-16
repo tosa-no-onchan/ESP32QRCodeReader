@@ -4,7 +4,7 @@ This library provides a interface to read QR Codes using an ESP-EYE with a camer
 
 Original 
 [alvarowolfx/ESP32QRCodeReader](https://github.com/alvarowolfx/ESP32QRCodeReader)  
-Internally this lib uses a slight modified version of the [Quirc library](https://github.com/dlbeer/quirc) and [qrdec](https://github.com/torque/qrdec).
+Internally this lib uses a slight modified version of the [Quirc library](https://github.com/dlbeer/quirc) , [qrdec](https://github.com/torque/qrdec)  and  [iconv.c](https://github.com/arduino/linino/blob/master/trunk/package/libs/libiconv/src/iconv.c).
 
 ## Usage
 
