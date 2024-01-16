@@ -1,8 +1,10 @@
-# ESP32 QR Code Reader
+# ESP-EYE QR Code Scanner with qrdec.
 
-This library provides a interface to read QR Codes using an ESP32 with a camera.
+This library provides a interface to read QR Codes using an ESP-EYE with a camera and qrdec.
 
-Internally this lib uses a slight modified version of the [Quirc library](https://github.com/dlbeer/quirc) and some code from OpenMV port on the [MaixPy](https://github.com/sipeed/MaixPy) project.
+Original 
+[alvarowolfx/ESP32QRCodeReader](https://github.com/alvarowolfx/ESP32QRCodeReader)  
+Internally this lib uses a slight modified version of the [Quirc library](https://github.com/dlbeer/quirc) and [qrdec](https://github.com/torque/qrdec).
 
 ## Demos
 
