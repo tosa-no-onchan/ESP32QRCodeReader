@@ -17,11 +17,11 @@ Framework: Arduino
 
 $ cd qrdec_esp32_eye/lib    
 $ git clone https://github.com/tosa-no-onchan/ESP32QRCodeReader.git    
-$ copy qrdec_esp32_eye/lib/ESP32QRCodeReader/examples/qrdec_esp32_eye/qrdec_esp32_eye.ino to qrdec_esp32_eye/src/  
+copy qrdec_esp32_eye/lib/ESP32QRCodeReader/examples/qrdec_esp32_eye/qrdec_esp32_eye.ino to qrdec_esp32_eye/src/  
 $ rm main.cpp  
-$ copy qrdec_esp32_eye/lib/ESP32QRCodeReader/examples/platformio.ini to qrdec_esp32_eye/  
-$ build  
-$ upload  
+copy qrdec_esp32_eye/lib/ESP32QRCodeReader/examples/platformio.ini to qrdec_esp32_eye/  
+build  
+upload  
   
 platformio.ini:
 
