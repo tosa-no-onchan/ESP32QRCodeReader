@@ -1,7 +1,7 @@
 # ESP-EYE QR Code Scanner with qrdec.
 
 This library provides a interface to read QR Codes using an ESP-EYE with a camera and qrdec.  
-I would like to recomend qrdec a little bit than quirc.  
+I would like to recomend qrdec a little bit rather than quirc.  
 See [qrdec](https://github.com/torque/qrdec).  
 
 Original 
@@ -10,7 +10,7 @@ Internally this lib uses a slight modified version of the [alvarowolfx/ESP32QRCo
 
 ## Usage
 
-Is recommended to use PlatformIO to install this lib. Add `qrdec_esp32_eye.ino` and `platformio.ini` file to PlatformIO workspace.
+I recommend to use PlatformIO to install this lib. Add `qrdec_esp32_eye.ino` and `platformio.ini` file to PlatformIO workspace.
 
 On PIO Home , New Project  
 Name: qrdec_esp32_eye  
